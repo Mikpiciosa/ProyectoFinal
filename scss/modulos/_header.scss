@@ -1,0 +1,18 @@
+@import "./mixin";
+@import "./variables";
+
+@include laptop {
+  .nav-query {
+    flex-direction: column;
+  }
+}
+
+header {
+  .logo-izq {
+    display: none;
+    @include laptop {
+      display: flex;
+      padding: 20px;
+    }
+  }
+}

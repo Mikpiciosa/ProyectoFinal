@@ -1,0 +1,38 @@
+@import "./mixin";
+@import "./generales";
+
+.footer {
+  background-color: #080033;
+  padding: 15px 0;
+
+  section {
+    width: 90%;
+    margin: 0 auto;
+    @include flex(column, center, center);
+    text-align: center;
+    color: white;
+
+    a {
+      img {
+        width: 250px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+    }
+
+    div {
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .footer-copyright {
+    @include flex(auto, center, center);
+    text-align: center;
+    font-weight: bold;
+  }
+}

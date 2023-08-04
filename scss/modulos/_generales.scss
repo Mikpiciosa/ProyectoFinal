@@ -1,0 +1,42 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #060027;
+  color: #444444;
+}
+
+main {
+  min-height: 100vh;
+}
+
+a {
+  color: #4154f1;
+  text-decoration: none;
+}
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+
+.rgb {
+  display: block;
+  height: 0.3rem;
+  background: linear-gradient(-45deg, #e8eaea, #23d5ab, #8604b1);
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+}
+
+/* .rgb:nth-of-type(1) {
+  margin-top: 10px;
+} */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

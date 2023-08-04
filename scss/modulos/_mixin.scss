@@ -1,0 +1,30 @@
+@import "./variables";
+
+/* mediaquerys */
+
+@mixin table {
+  @media (min-width: $table) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: $pc) {
+    @content;
+  }
+}
+
+/* display flex */
+
+@mixin flex($direction, $items, $content) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $items;
+  justify-content: $content;
+}
